@@ -1,6 +1,8 @@
 const size = 20;
 const speed = 15;
-const snake = new Snake(30, 20, size, speed);
+const canvasWidth = 600;
+const canvasHeight = 600;
+const snake = new Snake(canvasWidth / 2, canvasHeight / 2, size, speed);
 
 function setup() {
     createCanvas(600, 600);
@@ -17,6 +19,7 @@ function keyPressed() {
     if (keyCode === UP_ARROW) {
         snake.changeDirection(0, -speed);
     }
+
     if (keyCode === DOWN_ARROW) {
         snake.changeDirection(0, speed);
     }
@@ -27,5 +30,9 @@ function keyPressed() {
 
     if (keyCode === LEFT_ARROW) {
         snake.changeDirection(-speed, 0);
+    }
+
+    if (keyCode === 32) {
+        snake.changeDirection(0 , 0);
     }
 }
