@@ -1,0 +1,25 @@
+{
+  "name": "snake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcilmi/snake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcilmi/snake/issues"
+  },
+  "homepage": "https://github.com/mcilmi/snake#readme",
+  "devDependencies": {
+    "@types/p5": "^0.9.0",
+    "lite-server": "^2.5.4"
+  }
+}
